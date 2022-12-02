@@ -12,18 +12,6 @@
   }
   ```
 */
-const people = [
-  {
-    name: 'Rob Giometti',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'public/rob.png',
-    bio: '',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  // More people...
-]
 
 export default function Bio() {
   return (
