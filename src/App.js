@@ -1,13 +1,14 @@
 import './App.css';
-import Navbar from './Navbar.js';
-import Bio from './Bio.js';
-
+import Navbar from './components/Navbar.js';
+import Bio from './components/Bio.js';
+import Content from './components/Content.js';
 
 function App() {
   return (
     <div className="App bg-gray-800 h-full">
       <Navbar/>
       <Bio/>
+      <Content/>
     </div>
   );
 }
