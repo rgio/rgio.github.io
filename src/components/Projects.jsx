@@ -1,6 +1,3 @@
-import tot from '../assets/images/tot.png'
-import sapien from '../assets/images/sapien.jpeg'
-
 const projects = [
     {
         title: 'Sapien Network',
