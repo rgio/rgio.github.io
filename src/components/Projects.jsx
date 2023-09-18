@@ -22,7 +22,7 @@ export default function Projects() {
             {/* <h1 className="text-4xl font-bold">Projects</h1> */}
             <div className="project__container">
                 {projects.map((project) => (
-                    <a className={project.name} href={project.href} target="_blank">
+                    <a className={project.name} href={project.href} target="_blank" rel="noreferrer">
                     <div className="project" key={project.title}>
                         {/* <img className="project__img" src={project.imageUrl} alt="" /> */}
                         <div>
