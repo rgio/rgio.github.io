@@ -140,7 +140,7 @@ export default function Content() {
   const [posts, setPosts] = useState(conversations);
 
   return (
-    <div className="bg-gray-800 px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
+    <div className="bg-white px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
       <div className="relative mx-auto max-w-7xl lg:max-w-7xl">
         {/* <div>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Conversations</h2>
