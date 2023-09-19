@@ -11,4 +11,5 @@ function App() {
   );
 }
 
+//TODO: Add box shadow on projects, fix column spacing
 export default App;

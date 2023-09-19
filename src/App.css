@@ -1,60 +1,21 @@
-.App {
+.hero {  
+  height: 326px;
   text-align: center;
-  height: 100vh;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @media (max-width: 768px) {
+    height: 25vh;
+    background-image: url("./assets/images/hero_mobile.png");
+    background-size: contain;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.content-img {
-  width: 250px;
-  height: 140px;
-  border-radius: 5%;
-}
-
-.content-row {
-  justify-content: center;
-}
-
-.content-row__container {
-  width: 100%;
-}
-
-.content-row__image {
-  margin-left: 20px;
-  text-align: left;
-  width: 75%;
-}
-
-.hero {
-  height: 326px;
+.hero__img {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .hero__overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(57, 57, 57, 0.4);
   position: relative;
   top: -100%;
   z-index: 1;
@@ -62,6 +23,11 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  @media (max-width: 768px) {
+    top: 0;
+    gap: 20px;
+    height: 100%;
+  }
 }
 
 .hero__overlay h1 {
@@ -71,13 +37,19 @@
 .project__container {
   display: grid;
   margin-top: 35px;
-  margin-left: 60px;
+  margin-bottom: 35px;
+  /* margin-left: 60px; */
   grid-template-columns: repeat(3, 30%);
   gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   text-align: center;
   justify-items: center;
   grid-gap: 50px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .project {
@@ -87,35 +59,30 @@
   border: 1px solid gray;
   height: 350px;
   width: 350px;
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: 80vw;
+    margin-bottom: 20px;
+  }
 }
 
 .sapien {
   background-image: url("./assets/images/sapien.svg");
+  background-size: 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tot {
   background-image: url("./assets/images/tot.png");
-  background-size: contain;
+  background-size: 80% 80%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .rnn {
   background-image: url("./assets/images/rnn.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: 10%;
-}
-
-.project__image {
-  height: 300px;
-  width: 100%;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
