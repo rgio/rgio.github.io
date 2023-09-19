@@ -1,16 +1,17 @@
-.hero {  
-  height: 326px;
-  text-align: center;
-  @media (max-width: 1024px) {
-    height: 25vh;
-    background-image: url("./assets/images/hero_mobile.png");
-    background-size: contain;
+.hero {
+  height: 25vh;
+  background-image: url("./assets/images/hero_mobile.png");
+  background-size: contain;
+  @media (min-width: 1024px) {
+    height: 326px;
+    text-align: center;
   }
 }
 
 .hero__img {
-  @media (max-width: 1024px) {
-    display: none;
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
   }
 }
 
@@ -21,18 +22,18 @@
 }
 
 .hero__overlay {
-  background-color: rgba(57, 57, 57, 0.4);
-  position: relative;
-  top: -100%;
-  z-index: 1;
-  height: 326px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  @media (max-width: 1024px) {
-    top: 0;
-    gap: 20px;
-    height: 100%;
+  top: 0;
+  gap: 20px;
+  height: 100%;
+  @media (min-width: 1024px) {
+    background-color: rgba(57, 57, 57, 0.4);
+    position: relative;
+    top: -100%;
+    z-index: 1;
+    height: 326px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 }
 
@@ -41,34 +42,34 @@
 }
 
 .project__container {
-  display: grid;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  /* margin-left: 60px; */
-  grid-template-columns: repeat(3, 30%);
-  gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-  text-align: center;
-  justify-items: center;
-  grid-gap: 50px;
-  @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1024px) {
+    display: grid;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    /* margin-left: 60px; */
+    grid-template-columns: repeat(3, 30%);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+    justify-items: center;
+    grid-gap: 50px;
   }
 }
 
 .project {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid gray;
-  height: 350px;
-  width: 350px;
-  @media (max-width: 1024px) {
-    width: 80vw;
-    height: 80vw;
-    margin-bottom: 20px;
+  width: 80vw;
+  height: 80vw;
+  margin-bottom: 20px;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    height: 350px;
+    width: 350px;
   }
 }
 
