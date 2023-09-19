@@ -7,7 +7,7 @@ export default function Hero() {
             <img className="hero__img" src={hero} alt=""/>
             <div className="hero__overlay">
                 <Navbar />
-                <h1 className="hero__text text-6xl text-white font-bold">Rob Giometti</h1>
+                <h1 className="hero__txt text-6xl text-white font-bold">Rob Giometti</h1>
             </div>
         </div>
     );
