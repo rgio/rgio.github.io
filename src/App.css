@@ -1,13 +1,12 @@
 .hero {
   height: 25vh;
   text-align: center;
-  @media (max-width: 1023px) {
-    background-image: url("./assets/images/hero_mobile.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  background-image: url("./assets/images/hero_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   @media (min-width: 1024px) {
     height: 326px;
+    background: none;
   }
 }
 
