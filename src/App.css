@@ -2,6 +2,7 @@
   height: 25vh;
   background-image: url("./assets/images/hero_mobile.png");
   background-size: contain;
+  background-repeat: no-repeat;
   text-align: center;
   @media (min-width: 1024px) {
     height: 326px;
