@@ -70,6 +70,7 @@
   justify-content: center;
   border: 1px solid gray;
   @media (min-width: 1024px) {
+    display: grid;
     height: 350px;
     width: 350px;
   }
