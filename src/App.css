@@ -66,10 +66,13 @@
   .project__container {
     display: grid;
     /* margin-left: 60px; */
-    grid-template-columns: repeat(3, 30%);
-    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 150px;
+    margin-right: 150px;
+    column-gap: 10px;
+    row-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
-    grid-gap: 50px;
+    justify-content: center;
   }
 }
 
@@ -96,18 +99,30 @@
   background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .tot {
+  margin-top: 100px;
   background-image: url("./assets/images/tot.png");
   background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .rnn {
+  margin-top: 100px;
   background-image: url("./assets/images/rnn.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.credifai {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
 }
