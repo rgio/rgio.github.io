@@ -5,6 +5,11 @@ const projects = [
         href: 'https://www.linkedin.com/company/sapien.network/',
     },
     {
+        title: 'AI Lab',
+        name: 'ailab',
+        href: 'https://github.com/rgio/ai-lab',
+    },
+    {
         title: 'CredifAI',
         name: 'credifai',
         href: 'https://github.com/rgio/CredifAI',
@@ -29,7 +34,7 @@ export default function Projects() {
                 {projects.map((project) => (
                     <a className={project.name} href={project.href} target="_blank" rel="noreferrer">
                     <div className="project" key={project.title}>
-                        { project.name !== 'credifai' &&
+                        { project.name !== 'credifai' && project.name !== 'ailab' &&
                             <div>
                                 <p className="text-2xl bg-white font-semibold text-black">{project.title}</p>
                             </div>
